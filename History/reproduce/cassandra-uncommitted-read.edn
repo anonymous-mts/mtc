@@ -1,0 +1,406 @@
+{:type :invoke, :f :write, :value [0 0], :time 4530907551, :process 2, :index 0}
+{:type :ok, :f :write, :value [0 0], :time 4933511647, :process 2, :index 1}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 4933793983, :process 3, :index 2}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 4936196256, :process 1, :index 3}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 4936617421, :process 2, :index 4}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 4936986006, :process 4, :index 5}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 4937528847, :process 0, :index 6}
+{:type :ok, :f :cas, :value [0 [0 1]], :time 5108364331, :process 2, :index 7}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 5108558618, :process 2, :index 8}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5281192110, :process 2, :index 9}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 5281363937, :process 2, :index 10}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5362980385, :process 0, :index 11}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 5363112861, :process 0, :index 12}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5427239195, :process 4, :index 13}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 5427432205, :process 4, :index 14}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5461556652, :process 0, :index 15}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 5461691614, :process 0, :index 16}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5469029185, :process 3, :index 17}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 5469178280, :process 3, :index 18}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5530161605, :process 2, :index 19}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 5530367564, :process 2, :index 20}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5638123328, :process 4, :index 21}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 5638255769, :process 4, :index 22}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 5798958324, :process 1, :index 23}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 5799055688, :process 1, :index 24}
+{:type :ok, :f :cas, :value [0 [1 2]], :time 6191380042, :process 3, :index 25}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 6191550577, :process 3, :index 26}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 6545410896, :process 1, :index 27}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 6545495916, :process 1, :index 28}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 6646543806, :process 0, :index 29}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 6646713653, :process 0, :index 30}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 7902165785, :process 2, :index 31}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 7902291420, :process 2, :index 32}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 7993811576, :process 1, :index 33}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 7993942072, :process 1, :index 34}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 8172148913, :process 3, :index 35}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 8172252071, :process 3, :index 36}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 8391418114, :process 0, :index 37}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 8391541343, :process 0, :index 38}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 10079695799, :process 2, :index 39}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 10079803010, :process 2, :index 40}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 10149917867, :process 0, :index 41}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 10150030893, :process 0, :index 42}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 10524214961, :process 2, :index 43}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 10524393398, :process 2, :index 44}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 10581061819, :process 0, :index 45}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 10581283156, :process 0, :index 46}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 10656570705, :process 2, :index 47}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 10656688855, :process 2, :index 48}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 10710391380, :process 0, :index 49}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 10710529380, :process 0, :index 50}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 10798117611, :process 2, :index 51}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 10798302613, :process 2, :index 52}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 10902719782, :process 0, :index 53}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 10902875526, :process 0, :index 54}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 11058893504, :process 4, :error :no-host-available, :index 55}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 11058999343, :process 4, :index 56}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 11378488416, :process 3, :error :no-host-available, :index 57}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 11378599392, :process 3, :index 58}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 11499897545, :process 1, :error :no-host-available, :index 59}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 11500048221, :process 1, :index 60}
+{:type :ok, :f :cas, :value [0 [3 4]], :time 11600883383, :process 4, :index 61}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 11600984781, :process 4, :index 62}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 11856405730, :process 3, :index 63}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 11856688836, :process 3, :index 64}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 11924377543, :process 2, :index 65}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 11924461596, :process 2, :index 66}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 12011301575, :process 4, :index 67}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 12011522240, :process 4, :index 68}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 12044471667, :process 2, :index 69}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 12044670635, :process 2, :index 70}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 12124554051, :process 3, :index 71}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 12124852206, :process 3, :index 72}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 12198515098, :process 0, :index 73}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 12198725079, :process 0, :index 74}
+{:type :ok, :f :cas, :value [0 [4 5]], :time 12551292468, :process 2, :index 75}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 12551500654, :process 2, :index 76}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 14597461992, :process 3, :index 77}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 14597779832, :process 3, :index 78}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 16432858450, :process 4, :error :no-host-available, :index 79}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 16433041575, :process 4, :index 80}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 16598355996, :process 0, :error :no-host-available, :index 81}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 16598509008, :process 0, :index 82}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 17365323247, :process 1, :error :no-host-available, :index 83}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 17365477227, :process 1, :index 84}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 19827694048, :process 2, :error :no-host-available, :index 85}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 19828006609, :process 2, :index 86}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 20151203292, :process 2, :index 87}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 20151430810, :process 2, :index 88}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 20348353044, :process 1, :index 89}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 20348439247, :process 1, :index 90}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 21618242739, :process 3, :error :no-host-available, :index 91}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 21618457932, :process 3, :index 92}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 21726123017, :process 4, :error :no-host-available, :index 93}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 21726278822, :process 4, :index 94}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 22101150623, :process 1, :index 95}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 22101245991, :process 1, :index 96}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 22108082507, :process 0, :error :no-host-available, :index 97}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 22108169708, :process 0, :index 98}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 22153815503, :process 3, :index 99}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 22153969877, :process 3, :index 100}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 22238840967, :process 3, :index 101}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 22239039855, :process 3, :index 102}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 22255625109, :process 1, :index 103}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 22255715052, :process 1, :index 104}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 22504408281, :process 3, :index 105}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 22504637830, :process 3, :index 106}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 22673019118, :process 0, :index 107}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 22673182420, :process 0, :index 108}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 22735314522, :process 4, :index 109}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 22735594391, :process 4, :index 110}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 22794219667, :process 1, :index 111}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 22794409380, :process 1, :index 112}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 23375093657, :process 3, :index 113}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 23375237034, :process 3, :index 114}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 23383178964, :process 1, :index 115}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 23383293161, :process 1, :index 116}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 23420505904, :process 4, :index 117}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 23420695954, :process 4, :index 118}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 23516546681, :process 1, :index 119}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 23516772484, :process 1, :index 120}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 23538470186, :process 4, :index 121}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 23538558460, :process 4, :index 122}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 23559189569, :process 1, :index 123}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 23559279433, :process 1, :index 124}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 23595673267, :process 4, :index 125}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 23595799513, :process 4, :index 126}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 23771701734, :process 2, :error :no-host-available, :index 127}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 23772006995, :process 2, :index 128}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 24015791325, :process 0, :index 129}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 24015915156, :process 0, :index 130}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 24122407896, :process 4, :index 131}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 24122549521, :process 4, :index 132}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 24153033471, :process 1, :index 133}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 24153230354, :process 1, :index 134}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 25093178854, :process 3, :index 135}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 25093377898, :process 3, :index 136}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 25153931039, :process 4, :index 137}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 25154044701, :process 4, :index 138}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 27038745741, :process 2, :error :no-host-available, :index 139}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 27038877925, :process 2, :index 140}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 27292691157, :process 0, :error :no-host-available, :index 141}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 27292866386, :process 0, :index 142}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 27478021428, :process 2, :index 143}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 27478125728, :process 2, :index 144}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 28203755666, :process 3, :index 145}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 28203904497, :process 3, :index 146}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 28324355375, :process 1, :error :no-host-available, :index 147}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 28324487478, :process 1, :index 148}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 29215779222, :process 3, :index 149}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 29215905489, :process 3, :index 150}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 29258240408, :process 0, :index 151}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 29258375265, :process 0, :index 152}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 29446417873, :process 1, :index 153}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 29446532158, :process 1, :index 154}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 29762005926, :process 2, :index 155}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 29762146288, :process 2, :index 156}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 30018021262, :process 1, :index 157}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 30018149473, :process 1, :index 158}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 30074585188, :process 3, :index 159}
+{:type :invoke, :f :cas, :value [0 [9 10]], :time 30074711167, :process 3, :index 160}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 30810925667, :process 4, :error :no-host-available, :index 161}
+{:type :invoke, :f :cas, :value [0 [9 10]], :time 30811112765, :process 4, :index 162}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 31011883368, :process 2, :index 163}
+{:type :invoke, :f :cas, :value [0 [9 10]], :time 31012023155, :process 2, :index 164}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 31572572680, :process 0, :error :no-host-available, :index 165}
+{:type :invoke, :f :cas, :value [0 [9 10]], :time 31572721027, :process 0, :index 166}
+{:type :ok, :f :cas, :value [0 [9 10]], :time 33825910099, :process 2, :index 167}
+{:type :invoke, :f :cas, :value [0 [9 10]], :time 33826050187, :process 2, :index 168}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 34225426696, :process 1, :error :no-host-available, :index 169}
+{:type :invoke, :f :cas, :value [0 [9 10]], :time 34225543525, :process 1, :index 170}
+{:type :fail, :f :cas, :value [0 [9 10]], :time 34316610698, :process 3, :error :no-host-available, :index 171}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 34316734643, :process 3, :index 172}
+{:type :fail, :f :cas, :value [0 [9 10]], :time 34576565391, :process 2, :index 173}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 34576665259, :process 2, :index 174}
+{:type :fail, :f :cas, :value [0 [9 10]], :time 34621547484, :process 0, :error :no-host-available, :index 175}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 34621683172, :process 0, :index 176}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 34763841790, :process 0, :index 177}
+{:type :invoke, :f :cas, :value [0 [10 11]], :time 34763985607, :process 0, :index 178}
+{:type :fail, :f :cas, :value [0 [9 10]], :time 34872385032, :process 1, :index 179}
+{:type :invoke, :f :cas, :value [0 [10 11]], :time 34872522281, :process 1, :index 180}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 34936727768, :process 3, :index 181}
+{:type :invoke, :f :cas, :value [0 [10 11]], :time 34936962332, :process 3, :index 182}
+{:type :fail, :f :cas, :value [0 [9 10]], :time 34967440081, :process 4, :error :no-host-available, :index 183}
+{:type :invoke, :f :cas, :value [0 [10 11]], :time 34967588801, :process 4, :index 184}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 35142817272, :process 2, :index 185}
+{:type :invoke, :f :cas, :value [0 [10 11]], :time 35142920849, :process 2, :index 186}
+{:type :fail, :f :cas, :value [0 [10 11]], :time 36055385962, :process 4, :index 187}
+{:type :invoke, :f :cas, :value [0 [10 11]], :time 36055475056, :process 4, :index 188}
+{:type :fail, :f :cas, :value [0 [10 11]], :time 36139862305, :process 4, :index 189}
+{:type :invoke, :f :cas, :value [0 [0 1]], :time 36140010585, :process 4, :index 190}
+{:type :fail, :f :cas, :value [0 [10 11]], :time 37171431443, :process 2, :index 191}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 37171557686, :process 2, :index 192}
+{:type :fail, :f :cas, :value [0 [0 1]], :time 37291643115, :process 4, :index 193}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 37291766993, :process 4, :index 194}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 37469074115, :process 4, :index 195}
+{:type :invoke, :f :cas, :value [0 [11 12]], :time 37469213298, :process 4, :index 196}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 37547466350, :process 2, :index 197}
+{:type :invoke, :f :cas, :value [0 [11 12]], :time 37547594504, :process 2, :index 198}
+{:type :ok, :f :cas, :value [0 [11 12]], :time 37874987289, :process 4, :index 199}
+{:type :invoke, :f :cas, :value [0 [11 12]], :time 37875128810, :process 4, :index 200}
+{:type :fail, :f :cas, :value [0 [10 11]], :time 37953873266, :process 3, :error :no-host-available, :index 201}
+{:type :invoke, :f :cas, :value [0 [11 12]], :time 37954017360, :process 3, :index 202}
+{:type :fail, :f :cas, :value [0 [11 12]], :time 38043287746, :process 3, :index 203}
+{:type :invoke, :f :cas, :value [0 [11 12]], :time 38043430982, :process 3, :index 204}
+{:type :fail, :f :cas, :value [0 [10 11]], :time 38455929856, :process 1, :error :no-host-available, :index 205}
+{:type :invoke, :f :cas, :value [0 [11 12]], :time 38456091591, :process 1, :index 206}
+{:type :fail, :f :cas, :value [0 [11 12]], :time 38638051177, :process 2, :index 207}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 38638190430, :process 2, :index 208}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 38704531189, :process 2, :index 209}
+{:type :invoke, :f :cas, :value [0 [1 2]], :time 38704699780, :process 2, :index 210}
+{:type :fail, :f :cas, :value [0 [1 2]], :time 38888683219, :process 2, :index 211}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 38888818720, :process 2, :index 212}
+{:type :fail, :f :cas, :value [0 [11 12]], :time 39365887380, :process 3, :index 213}
+{:type :invoke, :f :cas, :value [0 [12 13]], :time 39366016356, :process 3, :index 214}
+{:type :fail, :f :cas, :value [0 [11 12]], :time 39383492111, :process 1, :index 215}
+{:type :invoke, :f :cas, :value [0 [12 13]], :time 39383585011, :process 1, :index 216}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 39473156438, :process 2, :index 217}
+{:type :invoke, :f :cas, :value [0 [12 13]], :time 39473258190, :process 2, :index 218}
+{:type :fail, :f :cas, :value [0 [10 11]], :time 40203301795, :process 0, :error :no-host-available, :index 219}
+{:type :invoke, :f :cas, :value [0 [12 13]], :time 40203431382, :process 0, :index 220}
+{:type :ok, :f :cas, :value [0 [12 13]], :time 41117663437, :process 3, :index 221}
+{:type :invoke, :f :cas, :value [0 [12 13]], :time 41117744763, :process 3, :index 222}
+{:type :fail, :f :cas, :value [0 [12 13]], :time 41430493827, :process 0, :index 223}
+{:type :invoke, :f :cas, :value [0 [12 13]], :time 41430589923, :process 0, :index 224}
+{:type :fail, :f :cas, :value [0 [12 13]], :time 41536394318, :process 1, :index 225}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 41536505389, :process 1, :index 226}
+{:type :fail, :f :cas, :value [0 [12 13]], :time 41579948216, :process 0, :index 227}
+{:type :invoke, :f :cas, :value [0 [10 11]], :time 41580031851, :process 0, :index 228}
+{:type :fail, :f :cas, :value [0 [10 11]], :time 41620650950, :process 0, :index 229}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 41620731111, :process 0, :index 230}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 41763243596, :process 0, :index 231}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 41763386778, :process 0, :index 232}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 41984341462, :process 1, :index 233}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 41984464491, :process 1, :index 234}
+{:type :fail, :f :cas, :value [0 [11 12]], :time 42045855756, :process 4, :error :no-host-available, :index 235}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 42046052856, :process 4, :index 236}
+{:type :fail, :f :cas, :value [0 [12 13]], :time 42183719043, :process 3, :index 237}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 42183858747, :process 3, :index 238}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 43175402018, :process 3, :index 239}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 43175538759, :process 3, :index 240}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 43190866112, :process 4, :index 241}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 43191002020, :process 4, :index 242}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 43317019972, :process 1, :index 243}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 43317101893, :process 1, :index 244}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 43416473015, :process 3, :index 245}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 43416547713, :process 3, :index 246}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 43472496147, :process 4, :index 247}
+{:type :invoke, :f :cas, :value [0 [11 12]], :time 43472581053, :process 4, :index 248}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 43516171943, :process 1, :index 249}
+{:type :invoke, :f :cas, :value [0 [14 15]], :time 43516252927, :process 1, :index 250}
+{:type :fail, :f :cas, :value [0 [11 12]], :time 43599809972, :process 4, :index 251}
+{:type :invoke, :f :cas, :value [0 [14 15]], :time 43599963649, :process 4, :index 252}
+{:type :fail, :f :cas, :value [0 [12 13]], :time 43616714930, :process 2, :error :no-host-available, :index 253}
+{:type :invoke, :f :cas, :value [0 [14 15]], :time 43616873097, :process 2, :index 254}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 43672017435, :process 3, :index 255}
+{:type :invoke, :f :cas, :value [0 [14 15]], :time 43672183283, :process 3, :index 256}
+{:type :fail, :f :cas, :value [0 [14 15]], :time 44353850433, :process 1, :index 257}
+{:type :invoke, :f :cas, :value [0 [14 15]], :time 44353995078, :process 1, :index 258}
+{:type :fail, :f :cas, :value [0 [14 15]], :time 44383136715, :process 3, :index 259}
+{:type :invoke, :f :cas, :value [0 [14 15]], :time 44383273960, :process 3, :index 260}
+{:type :fail, :f :cas, :value [0 [14 15]], :time 44435335946, :process 2, :index 261}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 44435464286, :process 2, :index 262}
+{:type :fail, :f :cas, :value [0 [14 15]], :time 44538663306, :process 4, :index 263}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 44538792973, :process 4, :index 264}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 44614199017, :process 4, :index 265}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 44614386302, :process 4, :index 266}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 44633238780, :process 2, :index 267}
+{:type :invoke, :f :cas, :value [0 [15 16]], :time 44633360565, :process 2, :index 268}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 44721203966, :process 4, :index 269}
+{:type :invoke, :f :cas, :value [0 [15 16]], :time 44721355882, :process 4, :index 270}
+{:type :fail, :f :cas, :value [0 [14 15]], :time 44824429835, :process 1, :index 271}
+{:type :invoke, :f :cas, :value [0 [15 16]], :time 44824627951, :process 1, :index 272}
+{:type :fail, :f :cas, :value [0 [14 15]], :time 44903493324, :process 3, :index 273}
+{:type :invoke, :f :cas, :value [0 [15 16]], :time 44903670094, :process 3, :index 274}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 45230316112, :process 0, :error :no-host-available, :index 275}
+{:type :invoke, :f :cas, :value [0 [15 16]], :time 45230432715, :process 0, :index 276}
+{:type :ok, :f :cas, :value [0 [15 16]], :time 45280483978, :process 3, :index 277}
+{:type :invoke, :f :cas, :value [0 [15 16]], :time 45280671753, :process 3, :index 278}
+{:type :fail, :f :cas, :value [0 [15 16]], :time 45816006145, :process 3, :index 279}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 45816135772, :process 3, :index 280}
+{:type :fail, :f :cas, :value [0 [15 16]], :time 45846629565, :process 0, :index 281}
+{:type :invoke, :f :cas, :value [0 [7 8]], :time 45846724264, :process 0, :index 282}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 46443765693, :process 3, :index 283}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 46444107092, :process 3, :index 284}
+{:type :fail, :f :cas, :value [0 [7 8]], :time 46574179621, :process 0, :index 285}
+{:type :invoke, :f :cas, :value [0 [16 17]], :time 46574314100, :process 0, :index 286}
+{:type :fail, :f :cas, :value [0 [15 16]], :time 46684394198, :process 1, :index 287}
+{:type :invoke, :f :cas, :value [0 [16 17]], :time 46684577740, :process 1, :index 288}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 46777672266, :process 3, :index 289}
+{:type :invoke, :f :cas, :value [0 [16 17]], :time 46777809725, :process 3, :index 290}
+{:type :fail, :f :cas, :value [0 [15 16]], :time 46863596570, :process 4, :index 291}
+{:type :invoke, :f :cas, :value [0 [16 17]], :time 46863772591, :process 4, :index 292}
+{:type :ok, :f :cas, :value [0 [16 17]], :time 47220756260, :process 0, :index 293}
+{:type :invoke, :f :cas, :value [0 [16 17]], :time 47220901797, :process 0, :index 294}
+{:type :fail, :f :cas, :value [0 [16 17]], :time 47763183475, :process 3, :index 295}
+{:type :invoke, :f :cas, :value [0 [16 17]], :time 47763381567, :process 3, :index 296}
+{:type :fail, :f :cas, :value [0 [15 16]], :time 47763946908, :process 2, :error :no-host-available, :index 297}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 47764077087, :process 2, :index 298}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 48594993953, :process 2, :index 299}
+{:type :invoke, :f :cas, :value [0 [6 7]], :time 48595067104, :process 2, :index 300}
+{:type :fail, :f :cas, :value [0 [16 17]], :time 49229063306, :process 0, :index 301}
+{:type :invoke, :f :cas, :value [0 [13 14]], :time 49229225666, :process 0, :index 302}
+{:type :fail, :f :cas, :value [0 [16 17]], :time 49417704067, :process 3, :index 303}
+{:type :invoke, :f :cas, :value [0 [17 18]], :time 49417830912, :process 3, :index 304}
+{:type :fail, :f :cas, :value [0 [16 17]], :time 50240720977, :process 4, :error :no-host-available, :index 305}
+{:type :invoke, :f :cas, :value [0 [17 18]], :time 50240870433, :process 4, :index 306}
+{:type :fail, :f :cas, :value [0 [16 17]], :time 50925525078, :process 1, :error :no-host-available, :index 307}
+{:type :invoke, :f :cas, :value [0 [17 18]], :time 50925693766, :process 1, :index 308}
+{:type :fail, :f :cas, :value [0 [6 7]], :time 52582012518, :process 2, :error :no-host-available, :index 309}
+{:type :invoke, :f :cas, :value [0 [17 18]], :time 52582136766, :process 2, :index 310}
+{:type :fail, :f :cas, :value [0 [13 14]], :time 52592002694, :process 0, :error :no-host-available, :index 311}
+{:type :invoke, :f :cas, :value [0 [17 18]], :time 52592116985, :process 0, :index 312}
+{:type :fail, :f :cas, :value [0 [17 18]], :time 54676895152, :process 3, :error :no-host-available, :index 313}
+{:type :invoke, :f :cas, :value [0 [17 18]], :time 54677028642, :process 3, :index 314}
+{:type :fail, :f :cas, :value [0 [17 18]], :time 56022133374, :process 1, :error :no-host-available, :index 315}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 56022272620, :process 1, :index 316}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 56141984655, :process 1, :index 317}
+{:type :invoke, :f :cas, :value [0 [9 10]], :time 56142063379, :process 1, :index 318}
+{:type :ok, :f :cas, :value [0 [17 18]], :time 56550221399, :process 0, :index 319}
+{:type :invoke, :f :cas, :value [0 [2 3]], :time 56550294682, :process 0, :index 320}
+{:type :fail, :f :cas, :value [0 [9 10]], :time 56838667529, :process 1, :index 321}
+{:type :invoke, :f :cas, :value [0 [18 19]], :time 56838769724, :process 1, :index 322}
+{:type :fail, :f :cas, :value [0 [17 18]], :time 56874343533, :process 4, :error :no-host-available, :index 323}
+{:type :invoke, :f :cas, :value [0 [18 19]], :time 56874450866, :process 4, :index 324}
+{:type :fail, :f :cas, :value [0 [2 3]], :time 57104108059, :process 0, :index 325}
+{:type :invoke, :f :cas, :value [0 [18 19]], :time 57104198308, :process 0, :index 326}
+{:type :fail, :f :cas, :value [0 [17 18]], :time 57173983963, :process 3, :index 327}
+{:type :invoke, :f :cas, :value [0 [18 19]], :time 57174061586, :process 3, :index 328}
+{:type :ok, :f :cas, :value [0 [18 19]], :time 57912681123, :process 4, :index 329}
+{:type :invoke, :f :cas, :value [0 [18 19]], :time 57912817606, :process 4, :index 330}
+{:type :fail, :f :cas, :value [0 [17 18]], :time 58147199228, :process 2, :error :no-host-available, :index 331}
+{:type :invoke, :f :cas, :value [0 [18 19]], :time 58147362480, :process 2, :index 332}
+{:type :fail, :f :cas, :value [0 [18 19]], :time 58908134996, :process 3, :index 333}
+{:type :invoke, :f :cas, :value [0 [15 16]], :time 58908309110, :process 3, :index 334}
+{:type :fail, :f :cas, :value [0 [15 16]], :time 59013358986, :process 3, :index 335}
+{:type :invoke, :f :cas, :value [0 [12 13]], :time 59013491252, :process 3, :index 336}
+{:type :fail, :f :cas, :value [0 [18 19]], :time 59050067148, :process 1, :index 337}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 59050211643, :process 1, :index 338}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 59723683864, :process 1, :index 339}
+{:type :invoke, :f :cas, :value [0 [19 20]], :time 59723879537, :process 1, :index 340}
+{:type :fail, :f :cas, :value [0 [18 19]], :time 59856556789, :process 2, :index 341}
+{:type :invoke, :f :cas, :value [0 [19 20]], :time 59856708571, :process 2, :index 342}
+{:type :fail, :f :cas, :value [0 [12 13]], :time 59884057006, :process 3, :index 343}
+{:type :invoke, :f :cas, :value [0 [19 20]], :time 59884233151, :process 3, :index 344}
+{:type :ok, :f :cas, :value [0 [19 20]], :time 60290043301, :process 2, :index 345}
+{:type :invoke, :f :cas, :value [0 [19 20]], :time 60290171051, :process 2, :index 346}
+{:type :fail, :f :cas, :value [0 [19 20]], :time 60475416633, :process 2, :index 347}
+{:type :invoke, :f :cas, :value [0 [19 20]], :time 60475579758, :process 2, :index 348}
+{:type :fail, :f :cas, :value [0 [19 20]], :time 60769921879, :process 3, :index 349}
+{:type :invoke, :f :cas, :value [0 [19 20]], :time 60769999553, :process 3, :index 350}
+{:type :fail, :f :cas, :value [0 [19 20]], :time 61180691646, :process 1, :index 351}
+{:type :invoke, :f :cas, :value [0 [8 9]], :time 61180826870, :process 1, :index 352}
+{:type :fail, :f :cas, :value [0 [8 9]], :time 61241831181, :process 1, :index 353}
+{:type :invoke, :f :cas, :value [0 [3 4]], :time 61242006000, :process 1, :index 354}
+{:type :fail, :f :cas, :value [0 [19 20]], :time 61260283412, :process 3, :index 355}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 61260414148, :process 3, :index 356}
+{:type :fail, :f :cas, :value [0 [18 19]], :time 61334892016, :process 0, :error :no-host-available, :index 357}
+{:type :invoke, :f :cas, :value [0 [20 21]], :time 61335023107, :process 0, :index 358}
+{:type :fail, :f :cas, :value [0 [3 4]], :time 61497678980, :process 1, :index 359}
+{:type :invoke, :f :cas, :value [0 [20 21]], :time 61497798462, :process 1, :index 360}
+{:type :fail, :f :cas, :value [0 [18 19]], :time 61712324675, :process 4, :error :no-host-available, :index 361}
+{:type :invoke, :f :cas, :value [0 [20 21]], :time 61712514920, :process 4, :index 362}
+{:type :fail, :f :cas, :value [0 [20 21]], :time 62297623978, :process 1, :index 363}
+{:type :invoke, :f :cas, :value [0 [20 21]], :time 62297742466, :process 1, :index 364}
+{:type :fail, :f :cas, :value [0 [20 21]], :time 62331183791, :process 4, :index 365}
+{:type :invoke, :f :cas, :value [0 [20 21]], :time 62331303605, :process 4, :index 366}
+{:type :fail, :f :cas, :value [0 [19 20]], :time 62394072907, :process 2, :index 367}
+{:type :invoke, :f :cas, :value [0 [20 21]], :time 62394151601, :process 2, :index 368}
+{:type :fail, :f :cas, :value [0 [20 21]], :time 62415603232, :process 0, :index 369}
+{:type :invoke, :f :cas, :value [0 [19 20]], :time 62415669937, :process 0, :index 370}
+{:type :fail, :f :cas, :value [0 [20 21]], :time 62473535814, :process 2, :index 371}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 62473654663, :process 2, :index 372}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 62514501974, :process 3, :index 373}
+{:type :invoke, :f :cas, :value [0 [4 5]], :time 62514644180, :process 3, :index 374}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 62520205935, :process 2, :index 375}
+{:type :invoke, :f :cas, :value [0 [21 22]], :time 62520312860, :process 2, :index 376}
+{:type :fail, :f :cas, :value [0 [4 5]], :time 62556873443, :process 3, :index 377}
+{:type :invoke, :f :cas, :value [0 [21 22]], :time 62557014349, :process 3, :index 378}
+{:type :fail, :f :cas, :value [0 [20 21]], :time 62617048962, :process 1, :index 379}
+{:type :invoke, :f :cas, :value [0 [21 22]], :time 62617168356, :process 1, :index 380}
+{:type :fail, :f :cas, :value [0 [19 20]], :time 62819138778, :process 0, :index 381}
+{:type :invoke, :f :cas, :value [0 [21 22]], :time 62819261683, :process 0, :index 382}
+{:type :ok, :f :cas, :value [0 [21 22]], :time 63125733334, :process 1, :index 383}
+{:type :invoke, :f :cas, :value [0 [21 22]], :time 63125996718, :process 1, :index 384}
+{:type :fail, :f :cas, :value [0 [20 21]], :time 63232878259, :process 4, :index 385}
+{:type :invoke, :f :cas, :value [0 [21 22]], :time 63233147035, :process 4, :index 386}
+{:type :fail, :f :cas, :value [0 [21 22]], :time 63283184869, :process 2, :index 387}
+{:type :invoke, :f :cas, :value [0 [17 18]], :time 63283249228, :process 2, :index 388}
+{:type :fail, :f :cas, :value [0 [21 22]], :time 63320544215, :process 3, :index 389}
+{:type :invoke, :f :cas, :value [0 [18 19]], :time 63320658425, :process 3, :index 390}
+{:type :fail, :f :cas, :value [0 [21 22]], :time 63392539979, :process 1, :index 391}
+{:type :invoke, :f :cas, :value [0 [5 6]], :time 63392618812, :process 1, :index 392}
+{:type :fail, :f :cas, :value [0 [5 6]], :time 63421886510, :process 1, :index 393}
+{:type :invoke, :f :cas, :value [0 [22 23]], :time 63421998032, :process 1, :index 394}
+{:type :fail, :f :cas, :value [0 [17 18]], :time 63470024102, :process 2, :index 395}
+{:type :invoke, :f :cas, :value [0 [22 23]], :time 63470191283, :process 2, :index 396}
+{:type :fail, :f :cas, :value [0 [18 19]], :time 64499807677, :process 3, :index 397}
+{:type :invoke, :f :cas, :value [0 [22 23]], :time 64499904889, :process 3, :index 398}
+{:type :fail, :f :cas, :value [0 [21 22]], :time 64524053863, :process 4, :index 399}
+{:type :invoke, :f :cas, :value [0 [22 23]], :time 64524161604, :process 4, :index 400}
+{:type :fail, :f :cas, :value [0 [22 23]], :time 65023618238, :process 2, :index 401}
+{:type :fail, :f :cas, :value [0 [22 23]], :time 65114160604, :process 4, :index 402}
+{:type :fail, :f :cas, :value [0 [22 23]], :time 65156909846, :process 1, :index 403}
+{:type :fail, :f :cas, :value [0 [22 23]], :time 65157444318, :process 3, :index 404}
+{:type :fail, :f :cas, :value [0 [21 22]], :time 65217210171, :process 0, :index 405}
