@@ -1,11 +1,17 @@
 package verifier;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Stack;
+import java.util.stream.Collectors;
 
 import org.jgrapht.alg.util.Pair;
 
@@ -181,11 +187,13 @@ public class MiniVerifier<KeyType, ValueType> {
                     if (source != target) {
                         graph.putEdge(source, target);
                     } else {
-                        printTransaction(source);
-                        printTransaction(mid);
-                        printTransaction(RWEdge2Mid.get(new Pair<>(mid, target)));
-                        printTransaction(target);
-                        System.out.println("SO+RW has self cycle");
+                        if (log) {
+                            printTransaction(source);
+                            printTransaction(mid);
+                            printTransaction(RWEdge2Mid.get(new Pair<>(mid, target)));
+                            printTransaction(target);
+                            System.out.println("SO+RW has self cycle");
+                        }
                         return false;
                     }
                 }
@@ -202,7 +210,11 @@ public class MiniVerifier<KeyType, ValueType> {
                         if (source != target) {
                             graph.putEdge(source, target);
                         } else {
-                            System.out.println("WW+RW has self cycle");
+                            if (log) {
+                                System.out.println("WW+RW has self cycle");
+                                printTransaction(source);
+                                printTransaction(mid);
+                            }
                             return false;
                         }
                     }
@@ -220,7 +232,11 @@ public class MiniVerifier<KeyType, ValueType> {
                         if (source != target) {
                             graph.putEdge(source, target);
                         } else {
-                            System.out.println("WR+RW has self cycle");
+                            if (log) {
+                                System.out.println("WR+RW has self cycle");
+                                printTransaction(source);
+                                printTransaction(mid);
+                            }
                             return false;
                         }
                     }
@@ -230,9 +246,14 @@ public class MiniVerifier<KeyType, ValueType> {
         profiler.endTick("SO/WW/WR + RW");
 
         profiler.startTick("cycle detection");
-        var result = !Graphs.hasCycle(graph);
+        var cyclic = !Graphs.hasCycle(graph);
         profiler.endTick("cycle detection");
-        return result;
+
+        if (log && cyclic) {
+            // 打印counterexample
+            Utils.printCounterExample(graph);
+        }
+        return cyclic;
     }
 
     private void extractReadAndWriteMappingForHistory(

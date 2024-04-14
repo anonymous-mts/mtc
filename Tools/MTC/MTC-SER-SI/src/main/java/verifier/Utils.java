@@ -1,12 +1,16 @@
 package verifier;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -15,6 +19,7 @@ import java.util.stream.Stream;
 import com.google.common.collect.Sets;
 import com.google.common.collect.Streams;
 import com.google.common.graph.EndpointPair;
+import com.google.common.graph.MutableGraph;
 import com.google.common.graph.MutableValueGraph;
 import com.google.common.graph.ValueGraph;
 import com.google.common.graph.ValueGraphBuilder;
@@ -34,6 +39,56 @@ import monosat.Logic;
 import monosat.Solver;
 
 class Utils {
+
+    public static <KeyType,ValueType> void printTransaction(Transaction<KeyType, ValueType> txn) {
+        System.out.println(txn);
+        for (var event : txn.getEvents()) {
+            System.out.println("\t" + event);
+        }
+    }
+
+    public static <KeyType,ValueType>  void printCounterExample(MutableGraph<Transaction<KeyType, ValueType>> graph) {
+        var unvisitedTransactions = graph.nodes().stream().collect(Collectors.toSet());
+        List<Transaction<KeyType, ValueType>> path = new ArrayList<>();
+        Set<Transaction<KeyType, ValueType>> pathSet = new HashSet<>();
+        while (!unvisitedTransactions.isEmpty()) {
+            var txn = unvisitedTransactions.iterator().next();
+            Deque<Transaction<KeyType, ValueType>> stack = new ArrayDeque<>();
+            stack.push(txn);
+            while (!stack.isEmpty()) {
+                var t = stack.peek();
+                if (!unvisitedTransactions.contains(t)) {
+                    // 处理过了它和它的所有邻居
+                    stack.pop();
+                    path.remove(t);
+                    pathSet.remove(t);
+                    continue;
+                }
+                unvisitedTransactions.remove(t);
+                path.add(t);
+                pathSet.add(t);
+                var nextTxnSet = graph.successors(t);
+                for (var nextTxn : nextTxnSet) {
+                    if (pathSet.contains(nextTxn)) {
+                        // 有环
+                        System.out.println("CounterExample loop in dep graph:");
+                        int start = path.indexOf(nextTxn);
+                        for (int i = start; i < path.size(); ++i) {
+                            printTransaction(path.get(i));
+                            System.out.println("-------------");
+                        }
+                        continue;
+                    }
+                    if (!unvisitedTransactions.contains(nextTxn)) {
+                        // 处理过了
+                        continue;
+                    }
+                    stack.push(nextTxn);
+                }
+            }
+        }
+    }
+
     static <KeyType, ValueType> boolean verifyInternalConsistency(History<KeyType, ValueType> history) {
         var writes = new HashMap<Pair<KeyType, ValueType>, Pair<Event<KeyType, ValueType>, Integer>>();
         var txnWrites = new HashMap<Pair<Transaction<KeyType, ValueType>, KeyType>, ArrayList<Integer>>();

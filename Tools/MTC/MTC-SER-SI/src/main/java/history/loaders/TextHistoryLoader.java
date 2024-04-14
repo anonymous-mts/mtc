@@ -53,6 +53,7 @@ public class TextHistoryLoader implements HistoryParser<Long, Long> {
         in.lines().forEachOrdered((line) -> {
             var match = regex.matcher(line);
             if (!match.matches()) {
+                System.out.println(line);
                 throw new Error("Invalid format");
             }
 
