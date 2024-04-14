@@ -1,0 +1,257 @@
+using config file: /home/ubuntu/Mini-Testing-Experiments/data/si/checker:polysi-vs-us/txns/20231130154445/n8_k500_t50756_r4/mini-config.yaml
+Your Config: 
+Config[LIB_TYPE=POSTGRESQL_LIB,CC_TYPE=WAIT_YOUNG_DIE,BENCH_TYPE=MINI,TIMESTAMP_ON=false,COBRA_FD=/tmp/cobra/,COBRA_FD_LOG=/tmp/cobra/log/,BENCHMARK_LOG_PATH=/tmp/cobra/benchmark.log,APPEND_OTHERWISE_RECREATE=false,DEBUG_LIB_FLAG=false,LOG_DEBUG=false,LOG_INFO=false,LOG_ERROR=true,SEED=1701332099,USE_INSTRUMENT=true,LOCAL_LOG=true,LOCAL_REMOTE_LOG=false,CLOUD_LOG=false,SIGN_DATA=false,MAX_FZ_TXN_NUM=20,NUM_TXN_IN_ENTITY=1,KEY_CLIENT_LOG_SUFFIX=_CL,EPOCH_KEY=FZVERSION,EPOCH_CLIENTS_SEP_STR=;,EPOCH_CLIENT_EPOCH_SEP_STR=:,USE_NEW_EPOCH_TXN=false,SKIP_LOADING=false,SKIP_TESTING=false,ENABLE_BARRIER=false,DONT_RECORD_LOADING=true,TXN_NUM=50756,CLIENT_ID=1,THREAD_NUM=8,CLIENT_NUM=1,SLEEP_TIME=1000,RESULT_FILE_NAME=result.txt,LATENCY_FOLDER=/tmp/cobra/latency/,REDIS_ADDRESS=redis://172.31.31.90/0,OP_PER_CHENGTXN=8,VALUE_LENGTH=140,KEY_PRFIX=key,KEY_INDX_START=1,NUM_KEYS=500,RATIO_INSERT=0,RATIO_READ=20,RATIO_UPDATE=80,RATIO_DELETE=0,RATIO_RMW=0,WAREHOUSE_NUM=1,REPORT_NEWORDER_ONLY=false,RUBIS_USERS_NUM=20000,TWITTER_USERS_NUM=1000,OP_PER_GENERALTXN=4,VERIFIER_PORT=10086,VERIFIER_HOSTNAME=localhost,THROUGHPUT_PER_WAIT=1000,WAIT_BETWEEN_TXNS=0,GC_KEY=COBRA_GC_KEY,SERVER_PORT=8980,SERVER_HOST=ye-cheng.duckdns.org,PG_PASSWORD=postgres,PG_USERNAME=postgres,DB_URL=jdbc:postgresql://localhost:5432/testdb,GOOGLEVALUE=value,ROCKSDB_PATH=/tmp/rocksdb,ISOLATION_LEVEL=1,COCKROACH_PASSWORD=,COCKROACH_USERNAME=,yak=172.24.71.222,boa=172.24.71.208,ye=216.165.70.10,COCKROACH_DB_URLS={172.24.71.222,172.24.71.208,216.165.70.10},COCKROACH_PORTS={26257,26257,26257},COCKROACH_DATABASE_NAME=cobra,YUGABYTE_PASSWORD=,YUGABYTE_USERNAME=,YUGABYTE_DB_URLS={127.0.0.1,127.0.0.2,127.0.0.3},YUGABYTE_PORTS={5433,5433,5433},YUGABYTE_DATABASE_NAME=cobra,NUM_REPLICA=3,NUM_KEY_PERTABLE=2,ROANOMALY_NUM_RO=2,WOROANOMALY_NUM_WORO=2,CRACK_ACTIVE_ABORT_RATE=0]
+[INFO] delete file [/tmp/cobra/log/T12.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T15.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T16.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T19.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T13.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T18.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T14.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T12.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T19.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T17.debug]... done?true
+[INFO] delete file [/tmp/cobra/log/T18.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T16.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T15.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T14.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T13.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T17.log]... done?true
+[INFO] delete file [/tmp/cobra/log/T18.error]... done?true
+[INFO] Clear done.
+waiting for barrier
+start benchmark
+progress%=1.06% #commit=533 #abort_txn=6 success%=98.89% tps = 538.46
+  #runners = 8
+progress%=2.32% #commit=1162 #abort_txn=18 success%=98.47% tps = 638.45
+  #runners = 8
+progress%=3.36% #commit=1679 #abort_txn=28 success%=98.36% tps = 527
+  #runners = 8
+progress%=4.64% #commit=2319 #abort_txn=36 success%=98.47% tps = 647.35
+  #runners = 8
+progress%=5.58% #commit=2795 #abort_txn=38 success%=98.66% tps = 478
+  #runners = 8
+progress%=6.66% #commit=3336 #abort_txn=45 success%=98.67% tps = 547.45
+  #runners = 8
+progress%=7.56% #commit=3791 #abort_txn=47 success%=98.78% tps = 457
+  #runners = 8
+progress%=8.74% #commit=4377 #abort_txn=60 success%=98.65% tps = 598.4
+  #runners = 8
+progress%=9.84% #commit=4929 #abort_txn=65 success%=98.7% tps = 556.44
+  #runners = 8
+progress%=10.68% #commit=5353 #abort_txn=68 success%=98.75% tps = 426.57
+  #runners = 8
+progress%=11.25% #commit=5638 #abort_txn=72 success%=98.74% tps = 288.71
+  #runners = 8
+progress%=11.9% #commit=5960 #abort_txn=78 success%=98.71% tps = 328
+  #runners = 8
+progress%=13.19% #commit=6613 #abort_txn=83 success%=98.76% tps = 657.34
+  #runners = 8
+progress%=14.47% #commit=7248 #abort_txn=97 success%=98.68% tps = 648.35
+  #runners = 8
+progress%=15.44% #commit=7738 #abort_txn=101 success%=98.71% tps = 494
+  #runners = 8
+progress%=16.83% #commit=8426 #abort_txn=114 success%=98.67% tps = 700.3
+  #runners = 8
+progress%=17.87% #commit=8948 #abort_txn=122 success%=98.65% tps = 530
+  #runners = 8
+progress%=19.02% #commit=9517 #abort_txn=135 success%=98.6% tps = 581.42
+  #runners = 8
+progress%=20.46% #commit=10235 #abort_txn=149 success%=98.57% tps = 732
+  #runners = 8
+progress%=21.24% #commit=10627 #abort_txn=155 success%=98.56% tps = 397.6
+  #runners = 8
+progress%=22.21% #commit=11109 #abort_txn=165 success%=98.54% tps = 491.51
+  #runners = 8
+progress%=23.38% #commit=11696 #abort_txn=172 success%=98.55% tps = 593.41
+  #runners = 8
+progress%=24.19% #commit=12102 #abort_txn=177 success%=98.56% tps = 411
+  #runners = 8
+progress%=25.11% #commit=12561 #abort_txn=183 success%=98.56% tps = 464.54
+  #runners = 8
+progress%=26.1% #commit=13060 #abort_txn=189 success%=98.57% tps = 504.5
+  #runners = 8
+progress%=27.03% #commit=13522 #abort_txn=197 success%=98.56% tps = 470
+  #runners = 8
+progress%=27.62% #commit=13818 #abort_txn=201 success%=98.57% tps = 299.7
+  #runners = 8
+progress%=28.46% #commit=14239 #abort_txn=206 success%=98.57% tps = 425.57
+  #runners = 8
+progress%=29.41% #commit=14714 #abort_txn=212 success%=98.58% tps = 480.52
+  #runners = 8
+progress%=30.3% #commit=15159 #abort_txn=219 success%=98.58% tps = 452
+  #runners = 8
+progress%=31.06% #commit=15539 #abort_txn=224 success%=98.58% tps = 384.62
+  #runners = 8
+progress%=32.01% #commit=16017 #abort_txn=232 success%=98.57% tps = 486
+  #runners = 8
+progress%=32.67% #commit=16346 #abort_txn=235 success%=98.58% tps = 331.67
+  #runners = 8
+progress%=33.58% #commit=16803 #abort_txn=239 success%=98.6% tps = 460.54
+  #runners = 8
+progress%=34.51% #commit=17268 #abort_txn=249 success%=98.58% tps = 475
+  #runners = 8
+progress%=34.99% #commit=17510 #abort_txn=251 success%=98.59% tps = 243.76
+  #runners = 8
+progress%=35.72% #commit=17871 #abort_txn=259 success%=98.57% tps = 369
+  #runners = 8
+progress%=36.62% #commit=18319 #abort_txn=269 success%=98.55% tps = 457.54
+  #runners = 8
+progress%=37.42% #commit=18719 #abort_txn=272 success%=98.57% tps = 403
+  #runners = 8
+progress%=38.19% #commit=19105 #abort_txn=277 success%=98.57% tps = 390.61
+  #runners = 8
+progress%=38.99% #commit=19510 #abort_txn=278 success%=98.6% tps = 405.59
+  #runners = 8
+progress%=39.81% #commit=19919 #abort_txn=286 success%=98.58% tps = 417
+  #runners = 8
+progress%=40.33% #commit=20176 #abort_txn=292 success%=98.57% tps = 262.74
+  #runners = 8
+progress%=41.86% #commit=20939 #abort_txn=306 success%=98.56% tps = 777
+  #runners = 8
+progress%=42.94% #commit=21482 #abort_txn=315 success%=98.55% tps = 551.45
+  #runners = 8
+progress%=43.84% #commit=21927 #abort_txn=322 success%=98.55% tps = 452
+  #runners = 8
+progress%=45.05% #commit=22538 #abort_txn=327 success%=98.57% tps = 615.38
+  #runners = 8
+progress%=46.13% #commit=23078 #abort_txn=338 success%=98.56% tps = 550.45
+  #runners = 8
+progress%=47.5% #commit=23762 #abort_txn=345 success%=98.57% tps = 691
+  #runners = 8
+progress%=48.55% #commit=24293 #abort_txn=351 success%=98.58% tps = 536.46
+  #runners = 8
+progress%=49.64% #commit=24839 #abort_txn=357 success%=98.58% tps = 551.45
+  #runners = 8
+progress%=50.61% #commit=25328 #abort_txn=362 success%=98.59% tps = 494
+  #runners = 8
+progress%=51.62% #commit=25833 #abort_txn=369 success%=98.59% tps = 511.49
+  #runners = 8
+progress%=52.63% #commit=26340 #abort_txn=373 success%=98.6% tps = 511
+  #runners = 8
+progress%=53.61% #commit=26828 #abort_txn=382 success%=98.6% tps = 496.5
+  #runners = 8
+progress%=54.52% #commit=27288 #abort_txn=386 success%=98.61% tps = 464
+  #runners = 8
+progress%=55.45% #commit=27750 #abort_txn=394 success%=98.6% tps = 469.53
+  #runners = 8
+progress%=56.31% #commit=28179 #abort_txn=403 success%=98.59% tps = 437.13
+  #runners = 8
+progress%=57.3% #commit=28674 #abort_txn=409 success%=98.59% tps = 501
+  #runners = 8
+progress%=58.34% #commit=29187 #abort_txn=422 success%=98.57% tps = 525.47
+  #runners = 8
+progress%=59.18% #commit=29608 #abort_txn=429 success%=98.57% tps = 428
+  #runners = 8
+progress%=60.11% #commit=30075 #abort_txn=433 success%=98.58% tps = 470.53
+  #runners = 8
+progress%=61.27% #commit=30654 #abort_txn=443 success%=98.58% tps = 589
+  #runners = 8
+progress%=62.31% #commit=31174 #abort_txn=452 success%=98.57% tps = 528.47
+  #runners = 8
+progress%=63.25% #commit=31644 #abort_txn=459 success%=98.57% tps = 477
+  #runners = 8
+progress%=64.01% #commit=32021 #abort_txn=467 success%=98.56% tps = 384.62
+  #runners = 8
+progress%=65.03% #commit=32530 #abort_txn=479 success%=98.55% tps = 521
+  #runners = 8
+progress%=66.06% #commit=33036 #abort_txn=492 success%=98.53% tps = 518.48
+  #runners = 8
+progress%=67.2% #commit=33606 #abort_txn=503 success%=98.53% tps = 581
+  #runners = 8
+progress%=67.9% #commit=33956 #abort_txn=508 success%=98.53% tps = 354.65
+  #runners = 8
+progress%=68.7% #commit=34355 #abort_txn=515 success%=98.52% tps = 406
+  #runners = 8
+progress%=69.64% #commit=34825 #abort_txn=521 success%=98.53% tps = 475.52
+  #runners = 8
+progress%=70.63% #commit=35319 #abort_txn=530 success%=98.52% tps = 503
+  #runners = 8
+progress%=71.08% #commit=35544 #abort_txn=532 success%=98.53% tps = 226.77
+  #runners = 8
+progress%=72.45% #commit=36233 #abort_txn=541 success%=98.53% tps = 698
+  #runners = 8
+progress%=73.68% #commit=36843 #abort_txn=552 success%=98.52% tps = 621
+  #runners = 8
+progress%=75.15% #commit=37579 #abort_txn=564 success%=98.52% tps = 747.25
+  #runners = 8
+progress%=76.51% #commit=38262 #abort_txn=572 success%=98.53% tps = 691
+  #runners = 8
+progress%=77.84% #commit=38930 #abort_txn=581 success%=98.53% tps = 676.32
+  #runners = 8
+progress%=79.07% #commit=39545 #abort_txn=589 success%=98.53% tps = 623
+  #runners = 8
+progress%=80.07% #commit=40038 #abort_txn=600 success%=98.52% tps = 504
+  #runners = 8
+progress%=81.01% #commit=40512 #abort_txn=607 success%=98.52% tps = 480.52
+  #runners = 8
+progress%=81.94% #commit=40973 #abort_txn=616 success%=98.52% tps = 470
+  #runners = 8
+progress%=82.9% #commit=41456 #abort_txn=623 success%=98.52% tps = 489.51
+  #runners = 8
+progress%=83.86% #commit=41929 #abort_txn=635 success%=98.51% tps = 485
+  #runners = 8
+progress%=84.81% #commit=42403 #abort_txn=644 success%=98.5% tps = 482.52
+  #runners = 8
+progress%=85.72% #commit=42862 #abort_txn=648 success%=98.51% tps = 462.08
+  #runners = 8
+progress%=86.71% #commit=43352 #abort_txn=658 success%=98.5% tps = 500
+  #runners = 8
+progress%=87.61% #commit=43802 #abort_txn=667 success%=98.5% tps = 458.54
+  #runners = 8
+progress%=88.59% #commit=44289 #abort_txn=674 success%=98.5% tps = 494
+  #runners = 8
+progress%=89.56% #commit=44774 #abort_txn=683 success%=98.5% tps = 493.51
+  #runners = 8
+progress%=90.12% #commit=45054 #abort_txn=686 success%=98.5% tps = 283
+  #runners = 8
+progress%=90.95% #commit=45475 #abort_txn=689 success%=98.51% tps = 423.58
+  #runners = 8
+progress%=91.76% #commit=45882 #abort_txn=692 success%=98.51% tps = 410
+  #runners = 8
+progress%=92.64% #commit=46322 #abort_txn=699 success%=98.51% tps = 447
+  #runners = 8
+progress%=93.58% #commit=46790 #abort_txn=707 success%=98.51% tps = 475.52
+  #runners = 8
+progress%=94.27% #commit=47138 #abort_txn=712 success%=98.51% tps = 353
+  #runners = 8
+progress%=95.17% #commit=47584 #abort_txn=719 success%=98.51% tps = 452.55
+  #runners = 8
+progress%=96.11% #commit=48059 #abort_txn=725 success%=98.51% tps = 481
+  #runners = 8
+progress%=97.15% #commit=48574 #abort_txn=734 success%=98.51% tps = 523.48
+  #runners = 8
+progress%=98.2% #commit=49106 #abort_txn=737 success%=98.52% tps = 535
+  #runners = 8
+progress%=99.16% #commit=49585 #abort_txn=744 success%=98.52% tps = 485.51
+  #runners = 8
+progress%=100% #commit=50008 #abort_txn=748 success%=98.53% tps = 427
+  #runners = 0
+benchmark finished
+Result: 
+========Summary=============
+#Txn=50756 #commit=50008 #abort_txn=748  success%=98.53%
+
+======Performance=========
+total runtime: 103,063.37ms 
+Throughput: 485.22 txn/sec (commit txn)
+Latency:
+  R1W1R2W2: 19.74ms  [91946ms/4.66k]
+  R2W2R1: 19.35ms  [90300ms/4.67k]
+  R2W2R2: 19.69ms  [91689ms/4.66k]
+  R2R1W2: 19.56ms  [88622ms/4.53k]
+  doBench: 103,063.37ms  [103063ms/0k]
+  R1R2W1W2: 20.19ms  [91564ms/4.54k]
+  R1R2: 1.51ms  [6840ms/4.52k]
+  R1R2W2W1: 19.69ms  [91676ms/4.66k]
+  R1R1W1: 18.81ms  [86713ms/4.61k]
+  kvi: 9.05ms  [927550ms/102.51k]
+  R1: 1.17ms  [5432ms/4.66k]
+  R1W1: 19.41ms  [89627ms/4.62k]
+  R1R2W2: 18.9ms  [87870ms/4.65k]
+NumOp: 257877
+ExtraOp: 0; ExtraTxn: 2402; NumTxnInMonitoring: 0
+SizeOfTrace: -1
+
+Dumping latencies...
+[SIGNAL] The test is finished! [rejungofszbj]
