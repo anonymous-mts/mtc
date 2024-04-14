@@ -3,6 +3,6 @@
 ```
 Tools
 |-- baseline-checkers       # baseline checkers for comparison
-|-- MT-workload-generator   # our implementations of mini transaction workload generator
-`-- MTC                     # our implementations of mini transaction checker
+|-- MT-workload-generator   # our implementation of mini transaction workload generator
+`-- MTC                     # our implementation of mini transaction checker
 ```
