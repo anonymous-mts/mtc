@@ -1,6 +1,6 @@
 # Porcupine
 
-We implemented a simple cli interface for porcupine.
+We implemented a simple cli interface for [porcupine](https://github.com/anishathalye/porcupine).
 
 ```
 $ go run main.go history.edn

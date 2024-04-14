@@ -39,6 +39,29 @@ import monosat.Logic;
 import monosat.Solver;
 
 class Utils {
+    public static <KeyType,ValueType> boolean verifyInternalConsistency(Transaction<KeyType, ValueType> txn) {
+        var events = txn.getEvents();
+        var key2value = new HashMap<>();
+        for (var event : events) {
+            if (event.getType() == EventType.WRITE) {
+                // 写操作，更新值
+                key2value.put(event.getKey(), event.getValue());
+            } else {
+                if (!key2value.containsKey(event.getKey())) {
+                    // 首次读，更新值
+                    key2value.put(event.getKey(), event.getValue());
+                } else {
+                    // 非首次读，检查值是否一致
+                    var value = key2value.get(event.getKey());
+                    if (!event.getValue().equals(value)) {
+                        // 不一致
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
 
     public static <KeyType,ValueType> void printTransaction(Transaction<KeyType, ValueType> txn) {
         System.out.println(txn);

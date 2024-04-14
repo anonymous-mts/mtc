@@ -50,6 +50,14 @@ public class MiniVerifier<KeyType, ValueType> {
         MutableGraph<Transaction<KeyType, ValueType>> graph = GraphBuilder.directed().build();
         Collection<Transaction<KeyType, ValueType>> transactions = history.getTransactions();
         for (Transaction<KeyType, ValueType> transaction : transactions) {
+            if (!Utils.verifyInternalConsistency(transaction)) {
+                // 内部一致性出问题
+                System.out.println("internal consistency violation:");
+                Utils.printTransaction(transaction);
+                return false;
+            }
+        }
+        for (Transaction<KeyType, ValueType> transaction : transactions) {
             graph.addNode(transaction);
         }
 

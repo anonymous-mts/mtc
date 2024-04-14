@@ -1,7 +1,5 @@
 # MTC-SER/SI
 
-MTC is implemented based on [PolySI](https://github.com/amnore/PolySI).
-
 ## Build and run
 
 Build with gradle wrapper.
@@ -10,13 +8,13 @@ Build with gradle wrapper.
 $ ./gradlew jar
 ```
 
-Run the MTC-SI checker by the `auditMini` subcommand.
+Run the MTC-SI checker using the `auditMini` subcommand.
 
 ```
 $ java -jar build/libs/PolySI-1.0.0-SNAPSHOT.jar auditMini  -t=text history.txt
 ```
 
-Run the MTC-SER checker by the `auditSER` subcommand.
+Run the MTC-SER checker using the `auditSER` subcommand.
 
 ```
 $ java -jar build/libs/PolySI-1.0.0-SNAPSHOT.jar auditSER  -t=text history.txt

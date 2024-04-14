@@ -1,7 +1,5 @@
 # MT-SER workload generator
 
-Our generator is based on [CobraBench](https://github.com/DBCobra/CobraBench).
-
 ## build and run
 
 Build the workload generator with maven.

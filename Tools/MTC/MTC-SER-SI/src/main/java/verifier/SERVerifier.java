@@ -39,6 +39,14 @@ public class SERVerifier<KeyType, ValueType> {
         Map<Pair<KeyType, ValueType>, Set<Transaction<KeyType, ValueType>>> read2Txns = new HashMap<>();
         Map<Pair<KeyType, ValueType>, Transaction<KeyType, ValueType>> write2Txn = new HashMap<>();
         for (Transaction<KeyType, ValueType> transaction : transactions) {
+            if (!Utils.verifyInternalConsistency(transaction)) {
+                // 内部一致性出问题
+                System.out.println("internal consistency violation:");
+                Utils.printTransaction(transaction);
+                return false;
+            }
+        }
+        for (Transaction<KeyType, ValueType> transaction : transactions) {
             graph.addNode(transaction);
 
             List<Event<KeyType, ValueType>> events = transaction.getEvents();
