@@ -133,6 +133,9 @@ lein run test-all  --nodes-file /root/nodes --version 4.2.6 --max-writes-per-key
 
 ``-w WORKLOAD`` 告诉 Jepsen 要运行的工作负载：例如 ``list-append``，``mini``，``wr``
 
+``--concurrency NUM`` 告诉 Jepsen 要运行的并发度。
+
+``--time-limit NUM`` 控制 Jepsen的运行时间。
 
 
 ## License
