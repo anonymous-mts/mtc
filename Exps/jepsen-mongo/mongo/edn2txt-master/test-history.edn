@@ -1,0 +1,60 @@
+{:type :invoke, :f :txn, :key1 5, :key2 7, :value ([:r 5 0] [:r 7 0]), :time 523399111, :process 13, :index 0}
+{:type :invoke, :f :txn, :key1 9, :key2 7, :value ([:r 9 0]), :time 557988694, :process 24, :index 1}
+{:type :invoke, :f :txn, :key1 2, :key2 0, :value ([:r 2 0] [:r 2 0] [:w 2 7]), :time 563266579, :process 9, :index 2}
+{:type :invoke, :f :txn, :key1 1, :key2 4, :value ([:r 1 0] [:r 4 0] [:w 1 11] [:w 4 12]), :time 574017826, :process 40, :index 3}
+{:type :invoke, :f :txn, :key1 8, :key2 6, :value ([:r 6 0] [:w 6 14] [:r 8 0]), :time 588070704, :process 3, :index 4}
+{:type :invoke, :f :txn, :key1 5, :key2 7, :value ([:r 5 0]), :time 607553814, :process 18, :index 5}
+{:type :invoke, :f :txn, :key1 5, :key2 1, :value ([:r 5 0] [:r 5 0] [:w 5 17]), :time 613241089, :process 4, :index 6}
+{:type :invoke, :f :txn, :key1 1, :key2 8, :value ([:r 1 0]), :time 614311721, :process 16, :index 7}
+{:type :invoke, :f :txn, :key1 9, :key2 3, :value ([:r 9 0] [:w 9 21]), :time 619510531, :process 17, :index 8}
+{:type :invoke, :f :txn, :key1 1, :key2 0, :value ([:r 1 0] [:r 0 0] [:w 0 24]), :time 625078039, :process 49, :index 9}
+{:type :invoke, :f :txn, :key1 7, :key2 0, :value ([:r 7 0] [:w 7 25]), :time 644776990, :process 32, :index 10}
+{:type :invoke, :f :txn, :key1 6, :key2 4, :value ([:r 6 0] [:r 4 0] [:w 4 28]), :time 659161236, :process 20, :index 11}
+{:type :invoke, :f :txn, :key1 9, :key2 1, :value ([:r 9 0] [:w 9 29] [:r 1 0] [:w 1 30]), :time 667319447, :process 28, :index 12}
+{:type :invoke, :f :txn, :key1 3, :key2 4, :value ([:r 3 0] [:r 4 0] [:w 3 31] [:w 4 32]), :time 683035353, :process 27, :index 13}
+{:type :invoke, :f :txn, :key1 6, :key2 9, :value ([:r 9 0] [:w 9 34] [:r 6 0]), :time 683889044, :process 0, :index 14}
+{:type :invoke, :f :txn, :key1 4, :key2 4, :value ([:r 4 0] [:w 4 36] [:r 4 0]), :time 684766481, :process 12, :index 15}
+{:type :invoke, :f :txn, :key1 8, :key2 9, :value ([:r 8 0] [:r 9 0]), :time 692128302, :process 22, :index 16}
+{:type :invoke, :f :txn, :key1 0, :key2 6, :value ([:r 0 0] [:w 0 39]), :time 693109651, :process 30, :index 17}
+{:type :invoke, :f :txn, :key1 9, :key2 3, :value ([:r 9 0]), :time 694456224, :process 29, :index 18}
+{:type :invoke, :f :txn, :key1 2, :key2 2, :value ([:r 2 0] [:r 2 0] [:w 2 43]), :time 698694318, :process 31, :index 19}
+{:type :invoke, :f :txn, :key1 4, :key2 0, :value ([:r 4 0] [:r 0 0] [:w 4 47] [:w 0 48]), :time 706602288, :process 46, :index 20}
+{:type :invoke, :f :txn, :key1 6, :key2 9, :value ([:r 9 0] [:w 9 50] [:r 6 0]), :time 720303911, :process 38, :index 21}
+{:type :invoke, :f :txn, :key1 3, :key2 6, :value ([:r 6 0] [:w 6 52] [:r 6 0]), :time 728191937, :process 41, :index 22}
+{:type :invoke, :f :txn, :key1 4, :key2 1, :value ([:r 1 0] [:r 4 0] [:w 1 54]), :time 729643261, :process 35, :index 23}
+{:type :invoke, :f :txn, :key1 2, :key2 8, :value ([:r 8 0] [:r 2 0] [:w 8 56]), :time 739764251, :process 25, :index 24}
+{:type :invoke, :f :txn, :key1 4, :key2 0, :value ([:r 4 0] [:r 0 0] [:w 4 57] [:w 0 58]), :time 745023197, :process 42, :index 25}
+{:type :invoke, :f :txn, :key1 3, :key2 7, :value ([:r 3 0] [:r 7 0] [:w 3 59] [:w 7 60]), :time 748252404, :process 33, :index 26}
+{:type :invoke, :f :txn, :key1 0, :key2 9, :value ([:r 0 0] [:r 9 0] [:w 0 61] [:w 9 62]), :time 750711040, :process 2, :index 27}
+{:index 28, :value ([:r 6 0] [:w 6 14] [:r 8 0]), :key2 6, :time 754576918, :process 3, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during conflict out checking.\n  Hint: The transaction might succeed if retried."], :key1 8}
+{:index 29, :value ([:r 7 0] [:w 7 25]), :key2 0, :time 754880385, :process 32, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 7}
+{:index 30, :value ([:r 2 0] [:r 2 0] [:w 2 7]), :key2 0, :time 755151607, :process 9, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 2}
+{:index 31, :value ([:r 1 0] [:r 4 0] [:w 1 11] [:w 4 12]), :key2 4, :time 759077101, :process 40, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 1}
+{:index 32, :value ([:r 4 0] [:r 0 0] [:w 4 47] [:w 0 48]), :key2 0, :time 759361943, :process 46, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 4}
+{:index 33, :value ([:r 9 0] [:w 9 21]), :key2 3, :time 759852734, :process 17, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to concurrent update"], :key1 9}
+{:index 34, :value ([:r 9 0] [:w 9 34] [:r 6 0]), :key2 9, :time 760161510, :process 0, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to concurrent update"], :key1 6}
+{:type :invoke, :f :txn, :key1 3, :key2 4, :value ([:r 3 0]), :time 760385599, :process 9, :index 35}
+{:index 36, :value ([:r 0 0] [:w 0 39]), :key2 6, :time 761436282, :process 30, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 0}
+{:type :invoke, :f :txn, :key1 7, :key2 4, :value ([:r 4 0] [:w 4 66] [:r 7 0]), :time 761742493, :process 21, :index 37}
+{:type :invoke, :f :txn, :key1 8, :key2 0, :value ([:r 8 0]), :time 762761633, :process 10, :index 38}
+{:type :invoke, :f :txn, :key1 6, :key2 9, :value ([:r 6 0] [:r 9 0]), :time 764844947, :process 37, :index 39}
+{:type :invoke, :f :txn, :key1 9, :key2 7, :value ([:r 9 0] [:r 9 0] [:w 9 71]), :time 765774273, :process 48, :index 40}
+{:type :invoke, :f :txn, :key1 6, :key2 9, :value ([:r 6 0] [:w 6 73] [:r 9 0] [:w 9 74]), :time 766570110, :process 39, :index 41}
+{:type :invoke, :f :txn, :key1 4, :key2 0, :value ([:r 0 0] [:w 0 76] [:r 4 0]), :time 767589232, :process 34, :index 42}
+{:type :invoke, :f :txn, :key1 3, :key2 8, :value ([:r 3 0]), :time 768886184, :process 23, :index 43}
+{:index 44, :value ([:r 3 0] [:r 4 0] [:w 3 31] [:w 4 32]), :key2 4, :time 775721557, :process 27, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 3}
+{:index 45, :value ([:r 5 0] [:r 5 0] [:w 5 17]), :key2 1, :time 775996532, :process 4, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 5}
+{:type :invoke, :f :txn, :key1 9, :key2 3, :value ([:r 9 0] [:w 9 79]), :time 776216833, :process 26, :index 46}
+{:type :invoke, :f :txn, :key1 3, :key2 0, :value ([:r 3 0] [:w 3 81]), :time 781365633, :process 19, :index 47}
+{:type :invoke, :f :txn, :key1 1, :key2 1, :value ([:r 1 0] [:w 1 83]), :time 785257919, :process 7, :index 48}
+{:type :invoke, :f :txn, :key1 0, :key2 6, :value ([:r 0 0] [:r 6 0] [:w 6 86] [:w 0 85]), :time 786413989, :process 44, :index 49}
+{:index 50, :value ([:r 1 0] [:r 4 0] [:w 1 54]), :key2 1, :time 792940472, :process 35, :type :fail, :f :txn, :error [:could-not-serialize "ERROR: could not serialize access due to read/write dependencies among transactions\n  Detail: Reason code: Canceled on identification as a pivot, during write.\n  Hint: The transaction might succeed if retried."], :key1 4}
+{:type :invoke, :f :txn, :key1 4, :key2 8, :value ([:r 4 0] [:r 8 0] [:w 4 87] [:w 8 88]), :time 793207224, :process 5, :index 51}
+{:type :invoke, :f :txn, :key1 5, :key2 1, :value ([:r 5 0] [:r 1 0] [:w 1 90]), :time 797240961, :process 0, :index 52}
+{:type :invoke, :f :txn, :key1 5, :key2 0, :value ([:r 0 0] [:r 5 0] [:w 0 92]), :time 803531904, :process 40, :index 53}
+{:type :invoke, :f :txn, :key1 4, :key2 0, :value ([:r 4 0] [:r 0 0] [:w 0 94]), :time 808165431, :process 43, :index 54}
+{:type :invoke, :f :txn, :key1 8, :key2 0, :value ([:r 0 0] [:w 0 96] [:r 0 0]), :time 809232554, :process 11, :index 55}
+{:type :invoke, :f :txn, :key1 7, :key2 9, :value ([:r 7 0] [:r 9 0] [:w 7 97] [:w 9 98]), :time 813690118, :process 47, :index 56}
+{:type :invoke, :f :txn, :key1 5, :key2 0, :value ([:r 0 0] [:w 0 100] [:r 0 0]), :time 814534830, :process 6, :index 57}
+{:type :ok, :f :txn, :key1 9, :key2 7, :value ([:r 9 0]), :time 815562143, :process 24, :index 58}
+{:type :ok, :f :txn, :key1 9, :key2 1, :value ([:r 9 0] [:w 9 29] [:r 1 0] [:w 1 30]), :time 815837293, :process 28, :index 59}
