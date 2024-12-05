@@ -1,0 +1,197 @@
+{:perf {:latency-graph {:valid? true},
+        :rate-graph {:valid? true},
+        :valid? true},
+ :clock {:valid? true},
+ :stats {:valid? true,
+         :count 3019,
+         :ok-count 3019,
+         :fail-count 0,
+         :info-count 0,
+         :by-f {:txn {:valid? true,
+                      :count 3019,
+                      :ok-count 3019,
+                      :fail-count 0,
+                      :info-count 0}}},
+ :exceptions {:valid? true},
+ :workload {:valid? false,
+            :anomaly-types (:G2-item :G2-item-realtime),
+            :anomalies {:G2-item [{:cycle [{:type :ok,
+                                            :f :txn,
+                                            :value [[:w 493 2]
+                                                    [:r 491 nil]
+                                                    [:r 468 5]],
+                                            :time 18821591019,
+                                            :process 11,
+                                            :index 4126}
+                                           {:type :ok,
+                                            :f :txn,
+                                            :value [[:w 491 1]
+                                                    [:r 490 4]
+                                                    [:r 493 nil]],
+                                            :time 18827226343,
+                                            :process 4,
+                                            :index 4130}
+                                           {:type :ok,
+                                            :f :txn,
+                                            :value [[:w 493 2]
+                                                    [:r 491 nil]
+                                                    [:r 468 5]],
+                                            :time 18821591019,
+                                            :process 11,
+                                            :index 4126}],
+                                   :steps ({:key 491,
+                                            :value nil,
+                                            :value' 1,
+                                            :type :rw,
+                                            :a-mop-index 1,
+                                            :b-mop-index 0}
+                                           {:key 493,
+                                            :value nil,
+                                            :value' 2,
+                                            :type :rw,
+                                            :a-mop-index 2,
+                                            :b-mop-index 0}),
+                                   :type :G2-item}
+                                  {:cycle [{:type :ok,
+                                            :f :txn,
+                                            :value [[:r 266 nil]
+                                                    [:r 263 nil]
+                                                    [:w 266 1]
+                                                    [:w 266 2]],
+                                            :time 7064214595,
+                                            :process 1,
+                                            :index 1802}
+                                           {:type :ok,
+                                            :f :txn,
+                                            :value [[:w 263 6]
+                                                    [:r 263 6]
+                                                    [:r 266 nil]],
+                                            :time 7083780824,
+                                            :process 7,
+                                            :index 1811}
+                                           {:type :ok,
+                                            :f :txn,
+                                            :value [[:r 266 nil]
+                                                    [:r 263 nil]
+                                                    [:w 266 1]
+                                                    [:w 266 2]],
+                                            :time 7064214595,
+                                            :process 1,
+                                            :index 1802}],
+                                   :steps ({:key 263,
+                                            :value nil,
+                                            :value' 6,
+                                            :type :rw,
+                                            :a-mop-index 1,
+                                            :b-mop-index 0}
+                                           {:key 266,
+                                            :value nil,
+                                            :value' 2,
+                                            :type :rw,
+                                            :a-mop-index 2,
+                                            :b-mop-index 3}),
+                                   :type :G2-item}],
+                        :G2-item-realtime [{:cycle [{:type :ok,
+                                                     :f :txn,
+                                                     :value [[:w
+                                                              139
+                                                              1]
+                                                             [:r
+                                                              135
+                                                              5]
+                                                             [:r
+                                                              138
+                                                              nil]],
+                                                     :time 2161561444,
+                                                     :process 7,
+                                                     :index 479}
+                                                    {:type :ok,
+                                                     :f :txn,
+                                                     :value [[:w
+                                                              138
+                                                              1]
+                                                             [:r
+                                                              138
+                                                              1]
+                                                             [:w
+                                                              138
+                                                              2]
+                                                             [:r
+                                                              135
+                                                              6]],
+                                                     :time 2144733027,
+                                                     :process 0,
+                                                     :index 473}
+                                                    {:type :ok,
+                                                     :f :txn,
+                                                     :value [[:r
+                                                              139
+                                                              nil]
+                                                             [:r
+                                                              139
+                                                              nil]],
+                                                     :time 2161657870,
+                                                     :process 12,
+                                                     :index 481}
+                                                    {:type :ok,
+                                                     :f :txn,
+                                                     :value [[:w
+                                                              139
+                                                              1]
+                                                             [:r
+                                                              135
+                                                              5]
+                                                             [:r
+                                                              138
+                                                              nil]],
+                                                     :time 2161561444,
+                                                     :process 7,
+                                                     :index 479}],
+                                            :steps ({:key 138,
+                                                     :value nil,
+                                                     :value' 2,
+                                                     :type :rw,
+                                                     :a-mop-index 2,
+                                                     :b-mop-index 2}
+                                                    {:type :realtime,
+                                                     :a' {:type :ok,
+                                                          :f :txn,
+                                                          :value [[:w
+                                                                   138
+                                                                   1]
+                                                                  [:r
+                                                                   138
+                                                                   1]
+                                                                  [:w
+                                                                   138
+                                                                   2]
+                                                                  [:r
+                                                                   135
+                                                                   6]],
+                                                          :time 2144733027,
+                                                          :process 0,
+                                                          :index 473},
+                                                     :b {:type :invoke,
+                                                         :f :txn,
+                                                         :value [[:r
+                                                                  139
+                                                                  nil]
+                                                                 [:r
+                                                                  139
+                                                                  nil]],
+                                                         :time 2144773926,
+                                                         :process 12,
+                                                         :index 474}}
+                                                    {:key 139,
+                                                     :value nil,
+                                                     :value' 1,
+                                                     :type :rw,
+                                                     :a-mop-index 0,
+                                                     :b-mop-index 0}),
+                                            :type :G2-item-realtime}]},
+            :not #{:repeatable-read},
+            :also-not #{:serializable
+                        :strict-serializable
+                        :strong-session-serializable}},
+ :valid? false,
+ :check-time-ms 2606}
