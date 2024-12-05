@@ -137,6 +137,8 @@ lein run test-all  --nodes-file /root/nodes --version 4.2.6 --max-writes-per-key
 
 ``--time-limit NUM`` 控制 Jepsen的运行时间。
 
+`` --test-count NUM `` 规定本次测试的次数。
+
 
 ## License
 
