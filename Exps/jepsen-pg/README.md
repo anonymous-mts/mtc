@@ -112,7 +112,6 @@ lein run test-all -w append --test-count 10  --max-txn-length 10 --txn-num 1000 
 ## License
 
 
-
 Copyright © 2020 Jepsen, LLC
 
 This program and the accompanying materials are made available under the terms of the Eclipse Public License 2.0 which is available at http://www.eclipse.org/legal/epl-2.0.
