@@ -11,14 +11,14 @@ MongoDB 测试，在 Debian Buster 上运行。多分片测试需要 5个节点.
 #### 1、进入docker目录下，启动五个数据节点和一个控制节点
 
 ```
-cd mini-testing-artifact/Exps/jepsen-mongo/docker
+cd /Exps/jepsen-mongo/docker
 sudo ./bin/up --dev
 ```
 
 #### 2、再开一个 shell，进入docker目录下，进入控制节点
 
 ```
-cd mini-testing-artifact-main/Exps/jepsen-mongo/docker
+cd /Exps/jepsen-mongo/docker
 sudo ./bin/console  
 ```
 
