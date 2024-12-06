@@ -80,8 +80,6 @@ lein run test --key-count 100 --max-writes-per-key 10 --concurrency 50 --rate 50
 
 ``-v VERSION ``控制我们安装和测试的 PostgreSQL  版本。
 
-``-w WORKLOAD`` 告诉 Jepsen 要运行的工作负载：例如 ``append``，``mini``。
-
 ``--concurrency NUM`` 告诉 Jepsen 要运行的并发度。
 
 ``--isolation`` 告诉 Jepsen 测试的隔离级别。
