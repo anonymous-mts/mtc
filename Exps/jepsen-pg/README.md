@@ -11,14 +11,14 @@ PostgreSQL 测试
 #### 1、进入jepsen目录下，构建jepsen
 
 ```
-cd mini-testing-artifact/Exps/jepsen-pg/jepsen
+cd /Exps/jepsen-pg/jepsen
 lein install
 ```
 
 #### 2、进入stolon文件夹，运行命令测试pg
 
 ```
-cd mini-testing-artifact/Exps/jepsen-pg/stolon
+cd /Exps/jepsen-pg/stolon
 ```
 
 ```
