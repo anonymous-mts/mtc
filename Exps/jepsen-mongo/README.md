@@ -63,7 +63,7 @@ Modify ``workload`` in the file to decide which ``workload`` to test.
 
 Modify ``max_txn_length_set`` in the file to test multiple sets of ``max_txn_length`` (maximum transaction length).
 
-##### 1.2  ``batchrun.py``（会调用``run.py``)
+##### 1.2  ``batchrun.py``（This will call ``run.py``)
 
 Modify ``txn_number`` in the file to test multiple sets of ``txn_number`` (number of transactions to test).
 
