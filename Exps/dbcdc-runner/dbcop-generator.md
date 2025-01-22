@@ -1,6 +1,6 @@
-# DBCOP 适配 Jepsen workload 生成器使用
+# DBCOP adapts for use with the Jepsen workload generator.
 
-## 1. 生成 bincode 格式的测试样例
+## 1. Generate test samples in bincode format.
 
 ```bash
 ➜  dbcdc-runner git:(main) ✗ dbcop generate -d /tmp/generate/ -n 25 -t 100 -e 20 -v 1000 --nhist 10
@@ -9,7 +9,7 @@
 hist-00000.bincode  hist-00001.bincode  hist-00002.bincode  hist-00003.bincode  hist-00004.bincode  hist-00005.bincode  hist-00006.bincode  hist-00007.bincode  hist-00008.bincode  hist-00009.bincode
 ```
 
-## 2. 生成 json 格式的测试样例
+## 2. Generate test samples in JSON format.
 
 ```bash
 ➜  generate dbcop convert -d /tmp/generate --from bincode
