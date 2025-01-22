@@ -28,6 +28,6 @@ hist-00000.bincode  hist-00001.bincode  hist-00002.bincode  hist-00003.bincode  
 ## 3. 在脚本中加入参数
 案例可见 ./databases/dgraph/run-dgraph.sh
 ```bash
---dbcop-workload-path /tmp/generate/hist-00000.json # 指定 dbcop 的地址 \ 
---dbcop-workload # 开启 dbcop 模式
+--dbcop-workload-path /tmp/generate/hist-00000.json # Specify the address of DBCOP. \ 
+--dbcop-workload # Enable DBCOP mode.
 ```
