@@ -1,5 +1,5 @@
 (defproject disalg.dbcdc "0.1.0-SNAPSHOT"
-  :description "运行基于 CDC 的 Jepsen 测试的执行框架"
+  :description "Run the execution framework for CDC-based Jepsen testing."
   :url "https://github.com/Tsunaou/dbcdc-runner"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
