@@ -65,7 +65,7 @@ Modify ``workload`` in the file to mini.
 
 Modify ``max_txn_length_set`` in the file to test multiple sets of ``max_txn_length`` (maximum transaction length).
 
-##### 2.2  ``batchrun_mini.py``（会调用``run_mini.py``)
+##### 2.2  ``batchrun_mini.py``（This will call ``run_mini.py``)
 
 Modify ``txn_number`` in the file to test multiple sets of ``txn_number`` (number of transactions to test).
 
