@@ -1,0 +1,57 @@
+Run with txn_num: 1000, test_count: 50
+max_txn_length: 4
+=======================
+Round: 1, Time: 13324ms, Checking Time: 504ms, Bug: N , N_Count: 2480 , OK_Count: 1002, Abort Rate: 0.596
+Round: 2, Time: 13258ms, Checking Time: 574ms, Bug: N , N_Count: 2484 , OK_Count: 1004, Abort Rate: 0.596
+Round: 3, Time: 13498ms, Checking Time: 634ms, Bug: Y , N_Count: 2492 , OK_Count: 1002, Abort Rate: 0.598
+Round: 4, Time: 12792ms, Checking Time: 555ms, Bug: N , N_Count: 2518 , OK_Count: 1004, Abort Rate: 0.601
+Round: 5, Time: 13039ms, Checking Time: 616ms, Bug: Y , N_Count: 2442 , OK_Count: 1005, Abort Rate: 0.588
+Round: 6, Time: 12656ms, Checking Time: 659ms, Bug: Y , N_Count: 2393 , OK_Count: 1005, Abort Rate: 0.580
+Round: 7, Time: 14022ms, Checking Time: 678ms, Bug: Y , N_Count: 2490 , OK_Count: 1005, Abort Rate: 0.596
+Round: 8, Time: 13713ms, Checking Time: 612ms, Bug: N , N_Count: 2540 , OK_Count: 1006, Abort Rate: 0.604
+Round: 9, Time: 13178ms, Checking Time: 604ms, Bug: N , N_Count: 2620 , OK_Count: 1003, Abort Rate: 0.617
+Round: 10, Time: 13474ms, Checking Time: 651ms, Bug: Y , N_Count: 2491 , OK_Count: 1003, Abort Rate: 0.597
+Round: 11, Time: 13017ms, Checking Time: 624ms, Bug: Y , N_Count: 2606 , OK_Count: 1003, Abort Rate: 0.615
+Round: 12, Time: 13256ms, Checking Time: 522ms, Bug: N , N_Count: 2514 , OK_Count: 1004, Abort Rate: 0.601
+Round: 13, Time: 13074ms, Checking Time: 653ms, Bug: Y , N_Count: 2455 , OK_Count: 1002, Abort Rate: 0.592
+Round: 14, Time: 12803ms, Checking Time: 561ms, Bug: Y , N_Count: 2366 , OK_Count: 1002, Abort Rate: 0.577
+Round: 15, Time: 13344ms, Checking Time: 534ms, Bug: N , N_Count: 2553 , OK_Count: 1006, Abort Rate: 0.606
+Round: 16, Time: 13529ms, Checking Time: 544ms, Bug: N , N_Count: 2525 , OK_Count: 1003, Abort Rate: 0.603
+Round: 17, Time: 12985ms, Checking Time: 624ms, Bug: Y , N_Count: 2478 , OK_Count: 1005, Abort Rate: 0.594
+Round: 18, Time: 13217ms, Checking Time: 546ms, Bug: N , N_Count: 2478 , OK_Count: 1002, Abort Rate: 0.596
+Round: 19, Time: 12978ms, Checking Time: 627ms, Bug: Y , N_Count: 2468 , OK_Count: 1002, Abort Rate: 0.594
+Round: 20, Time: 13671ms, Checking Time: 741ms, Bug: Y , N_Count: 2522 , OK_Count: 1003, Abort Rate: 0.602
+Round: 21, Time: 12830ms, Checking Time: 557ms, Bug: N , N_Count: 2385 , OK_Count: 1002, Abort Rate: 0.580
+Round: 22, Time: 12365ms, Checking Time: 602ms, Bug: Y , N_Count: 2450 , OK_Count: 1001, Abort Rate: 0.591
+Round: 23, Time: 13564ms, Checking Time: 734ms, Bug: Y , N_Count: 2500 , OK_Count: 1005, Abort Rate: 0.598
+Round: 24, Time: 13905ms, Checking Time: 677ms, Bug: Y , N_Count: 2528 , OK_Count: 1003, Abort Rate: 0.603
+Round: 25, Time: 13576ms, Checking Time: 646ms, Bug: Y , N_Count: 2509 , OK_Count: 1001, Abort Rate: 0.601
+Round: 26, Time: 13119ms, Checking Time: 621ms, Bug: Y , N_Count: 2576 , OK_Count: 1005, Abort Rate: 0.610
+Round: 27, Time: 13495ms, Checking Time: 602ms, Bug: N , N_Count: 2634 , OK_Count: 1003, Abort Rate: 0.619
+Round: 28, Time: 13452ms, Checking Time: 705ms, Bug: Y , N_Count: 2484 , OK_Count: 1005, Abort Rate: 0.595
+Round: 29, Time: 12950ms, Checking Time: 624ms, Bug: Y , N_Count: 2528 , OK_Count: 1003, Abort Rate: 0.603
+Round: 30, Time: 13048ms, Checking Time: 612ms, Bug: N , N_Count: 2537 , OK_Count: 1003, Abort Rate: 0.605
+Round: 31, Time: 12816ms, Checking Time: 560ms, Bug: Y , N_Count: 2306 , OK_Count: 1003, Abort Rate: 0.565
+Round: 32, Time: 13236ms, Checking Time: 519ms, Bug: N , N_Count: 2439 , OK_Count: 1005, Abort Rate: 0.588
+Round: 33, Time: 13259ms, Checking Time: 664ms, Bug: Y , N_Count: 2444 , OK_Count: 1003, Abort Rate: 0.590
+Round: 34, Time: 13424ms, Checking Time: 590ms, Bug: N , N_Count: 2533 , OK_Count: 1004, Abort Rate: 0.604
+Round: 35, Time: 13110ms, Checking Time: 572ms, Bug: N , N_Count: 2503 , OK_Count: 1002, Abort Rate: 0.600
+Round: 36, Time: 13403ms, Checking Time: 545ms, Bug: N , N_Count: 2615 , OK_Count: 1002, Abort Rate: 0.617
+Round: 37, Time: 14177ms, Checking Time: 597ms, Bug: Y , N_Count: 2443 , OK_Count: 1007, Abort Rate: 0.588
+Round: 38, Time: 12539ms, Checking Time: 514ms, Bug: N , N_Count: 2500 , OK_Count: 1004, Abort Rate: 0.598
+Round: 39, Time: 13481ms, Checking Time: 717ms, Bug: Y , N_Count: 2564 , OK_Count: 1002, Abort Rate: 0.609
+Round: 40, Time: 14617ms, Checking Time: 644ms, Bug: Y , N_Count: 2591 , OK_Count: 1006, Abort Rate: 0.612
+Round: 41, Time: 14284ms, Checking Time: 652ms, Bug: Y , N_Count: 2622 , OK_Count: 1003, Abort Rate: 0.617
+Round: 42, Time: 13315ms, Checking Time: 649ms, Bug: Y , N_Count: 2438 , OK_Count: 1003, Abort Rate: 0.589
+Round: 43, Time: 12889ms, Checking Time: 657ms, Bug: Y , N_Count: 2452 , OK_Count: 1002, Abort Rate: 0.591
+Round: 44, Time: 13290ms, Checking Time: 746ms, Bug: Y , N_Count: 2512 , OK_Count: 1005, Abort Rate: 0.600
+Round: 45, Time: 12913ms, Checking Time: 663ms, Bug: Y , N_Count: 2417 , OK_Count: 1002, Abort Rate: 0.585
+Round: 46, Time: 13023ms, Checking Time: 620ms, Bug: Y , N_Count: 2480 , OK_Count: 1003, Abort Rate: 0.596
+Round: 47, Time: 13074ms, Checking Time: 633ms, Bug: N , N_Count: 2478 , OK_Count: 1003, Abort Rate: 0.595
+Round: 48, Time: 13167ms, Checking Time: 588ms, Bug: Y , N_Count: 2398 , OK_Count: 1004, Abort Rate: 0.581
+Round: 49, Time: 13635ms, Checking Time: 682ms, Bug: Y , N_Count: 2532 , OK_Count: 1002, Abort Rate: 0.604
+Round: 50, Time: 13515ms, Checking Time: 611ms, Bug: Y , N_Count: 2443 , OK_Count: 1004, Abort Rate: 0.589
+=======================
+Total Run Time: 664299ms, Total Checking Time: 30866ms
+Bug / Total: 32/50
+
